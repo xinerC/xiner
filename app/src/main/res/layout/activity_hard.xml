@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jeremylim.mathgame.HardActivity"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/next"
+        android:id="@+id/imageViewNext"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="49dp" />
+
+    <Button
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonHome"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#E3F2FD"
+        android:textStyle="normal|bold"
+        android:background="#1565C0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNum1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#1565C0"
+        android:textSize="46sp"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="44dp"
+        android:layout_above="@+id/editTextAnswer"
+        android:layout_toEndOf="@+id/buttonHome" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextAnswer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="40sp"
+        android:textColor="#1565C0"
+        android:hint="Answer"
+        android:textAlignment="textStart"
+        android:layout_above="@+id/buttonSubmit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@+id/imageViewOperation" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSubmit"
+        android:background="#1565C0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="normal|bold"
+        android:textColor="#E3F2FD"
+        android:layout_marginBottom="42dp"
+        android:layout_above="@+id/imageViewNext"
+        android:layout_alignStart="@+id/editTextAnswer"
+        android:layout_marginStart="37dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/plus"
+        android:id="@+id/imageViewOperation"
+        android:layout_marginBottom="12dp"
+        android:layout_alignBottom="@+id/textViewNum2"
+        android:layout_toEndOf="@+id/textViewNum1"
+        android:layout_marginStart="39dp" />
+
+    <TextView
+        android:text="99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNum2"
+        android:textSize="46sp"
+        android:textStyle="normal|bold"
+        android:textColor="#1565C0"
+        android:layout_alignBaseline="@+id/textViewNum1"
+        android:layout_alignBottom="@+id/textViewNum1"
+        android:layout_alignStart="@+id/buttonSubmit" />
+</RelativeLayout>
